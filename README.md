@@ -3,6 +3,11 @@ A frequency counter based around Ublox NEO-7M GPS's 1PPS output, Lattice MachX02
 
 Almost any of the modules can be substituted for whatever you have around. An interesting change would be to swap the 1PPS output for a 10 MHz reference input.
 
+
 ![simple diagram of the hardware setup](./images/diagram.png)
+
+
+![the hardware on a testboard with 75 mhz test signal](./images/testhardware.jpg)
+
 
 George, M1GEO.
