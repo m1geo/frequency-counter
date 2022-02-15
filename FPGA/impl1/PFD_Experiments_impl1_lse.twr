@@ -1,0 +1,180 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Mon Feb 14 22:56:40 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets test_clk_c]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets fastclk]
+            478 items scored, 218 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 2.316ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \spi/bitcnt__i1  (from fastclk +)
+   Destination:    FD1P3JX    D              \spi/word_data_sent_i0_i3  (to fastclk +)
+
+   Delay:                   7.156ns  (26.9% logic, 73.1% route), 4 logic levels.
+
+ Constraint Details:
+
+      7.156ns data_path \spi/bitcnt__i1 to \spi/word_data_sent_i0_i3 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 2.316ns
+
+ Path Details: \spi/bitcnt__i1 to \spi/word_data_sent_i0_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \spi/bitcnt__i1 (from fastclk)
+Route         6   e 1.515                                  \spi/bitcnt[1]
+LUT4        ---     0.493              A to Z              \spi/i3_2_lut_3_lut
+Route         1   e 0.941                                  \spi/n8
+LUT4        ---     0.493              C to Z              \spi/i346_4_lut
+Route        23   e 1.836                                  \spi/n640
+LUT4        ---     0.493              B to Z              \spi/i1615_2_lut
+Route         1   e 0.941                                  \spi/n608
+                  --------
+                    7.156  (26.9% logic, 73.1% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 2.316ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \spi/bitcnt__i1  (from fastclk +)
+   Destination:    FD1P3JX    D              \spi/word_data_sent_i0_i5  (to fastclk +)
+
+   Delay:                   7.156ns  (26.9% logic, 73.1% route), 4 logic levels.
+
+ Constraint Details:
+
+      7.156ns data_path \spi/bitcnt__i1 to \spi/word_data_sent_i0_i5 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 2.316ns
+
+ Path Details: \spi/bitcnt__i1 to \spi/word_data_sent_i0_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \spi/bitcnt__i1 (from fastclk)
+Route         6   e 1.515                                  \spi/bitcnt[1]
+LUT4        ---     0.493              A to Z              \spi/i3_2_lut_3_lut
+Route         1   e 0.941                                  \spi/n8
+LUT4        ---     0.493              C to Z              \spi/i346_4_lut
+Route        23   e 1.836                                  \spi/n640
+LUT4        ---     0.493              B to Z              \spi/i1614_2_lut
+Route         1   e 0.941                                  \spi/n606
+                  --------
+                    7.156  (26.9% logic, 73.1% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 2.316ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \spi/bitcnt__i1  (from fastclk +)
+   Destination:    FD1P3JX    D              \spi/word_data_sent_i0_i6  (to fastclk +)
+
+   Delay:                   7.156ns  (26.9% logic, 73.1% route), 4 logic levels.
+
+ Constraint Details:
+
+      7.156ns data_path \spi/bitcnt__i1 to \spi/word_data_sent_i0_i6 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 2.316ns
+
+ Path Details: \spi/bitcnt__i1 to \spi/word_data_sent_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \spi/bitcnt__i1 (from fastclk)
+Route         6   e 1.515                                  \spi/bitcnt[1]
+LUT4        ---     0.493              A to Z              \spi/i3_2_lut_3_lut
+Route         1   e 0.941                                  \spi/n8
+LUT4        ---     0.493              C to Z              \spi/i346_4_lut
+Route        23   e 1.836                                  \spi/n640
+LUT4        ---     0.493              B to Z              \spi/i1613_2_lut
+Route         1   e 0.941                                  \spi/n605
+                  --------
+                    7.156  (26.9% logic, 73.1% route), 4 logic levels.
+
+Warning: 7.316 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets test_clk_c]              |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets fastclk]                 |     5.000 ns|     7.316 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\spi/n640                               |      23|     161|     73.85%
+                                        |        |        |
+\spi/n8                                 |       1|      69|     31.65%
+                                        |        |        |
+\spi/n2165                              |       8|      56|     25.69%
+                                        |        |        |
+\spi/n3204                              |       1|      46|     21.10%
+                                        |        |        |
+\spi/n2992                              |       1|      40|     18.35%
+                                        |        |        |
+bitcnt[0]                               |       7|      32|     14.68%
+                                        |        |        |
+SCKr[1]                                 |       6|      31|     14.22%
+                                        |        |        |
+SCKr[2]                                 |       5|      31|     14.22%
+                                        |        |        |
+\spi/bitcnt[1]                          |       6|      31|     14.22%
+                                        |        |        |
+\spi/bitcnt[2]                          |       5|      31|     14.22%
+                                        |        |        |
+\spi/bitcnt[3]                          |       4|      31|     14.22%
+                                        |        |        |
+\spi/bitcnt[4]                          |       3|      31|     14.22%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 218  Score: 350954
+
+Constraints cover  478 paths, 82 nets, and 252 connections (79.0% coverage)
+
+
+Peak memory: 61554688 bytes, TRCE: 2113536 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

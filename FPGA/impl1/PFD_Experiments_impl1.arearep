@@ -1,0 +1,30 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  139 of 7209 (1.928%)
+I/O cells:      17
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        34          100.0
+                            FD1P3AX        31          100.0
+                            FD1P3IX         5          100.0
+                            FD1S3AX       102          100.0
+                            FD1S3IX         1          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                               LUT4        52          100.0
+                                 OB        11          100.0
+                               OSCH         1          100.0
+SUB MODULES
+                     spi_peripheral         1
+                              TOTAL       245
+----------------------------------------------------------------------
+Report for cell spi_peripheral.v1
+Instance Path : spi
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        31          100.0
+                            FD1P3IX         5          100.0
+                            FD1S3AX         6            5.9
+                            FD1S3IX         1          100.0
+                               LUT4        42           80.8
+                              TOTAL        85

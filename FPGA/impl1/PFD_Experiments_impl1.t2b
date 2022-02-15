@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/George Smart/Documents/LatticeFPGA/PFD Experiments"  

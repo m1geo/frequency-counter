@@ -1,0 +1,21 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      72.00        100.0
+                                  LUT4	      52.00        100.0
+                                 IOBUF	         17        100.0
+                                PFUREG	        139        100.0
+                                RIPPLE	         34        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        spi_peripheral	          1        31.0
+---------------------------------------------------
+Report for cell spi_peripheral
+   Instance path: top/spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.33        31.0
+                                  LUT4	      42.00        80.8
+                                PFUREG	         43        30.9
