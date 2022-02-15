@@ -6,6 +6,7 @@ Almost any of the modules can be substituted for whatever you have around. An in
 
 ![simple diagram of the hardware setup](./images/diagram.png)
 
+Below, a 75 MHz test signal is input between FPGA pin 128 and ground (3.3 Vpk-pk, 1.65 VDC offset). This test bench below works at 450 MHz without issue.
 
 ![the hardware on a testboard with 75 mhz test signal](./images/testhardware.jpg)
 
